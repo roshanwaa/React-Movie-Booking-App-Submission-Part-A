@@ -7,8 +7,8 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 
-import Details from '../../screens/details/Details';
-import ReactDOM from 'react-dom';
+// import Details from '../../screens/details/Details';
+// import ReactDOM from 'react-dom';
 
 const styles = (theme) => ({
   root: {
@@ -63,13 +63,6 @@ class Home extends Component {
     this.setState({ artists: event.target.value });
   };
 
-  clickMovieGridItemHandler = (movieId) => {
-    console.log(movieId);
-    ReactDOM.render(
-      <Details movieId={movieId} />,
-      document.getElementById('root')
-    );
-  };
 
   render() {
     const { classes } = this.props;
