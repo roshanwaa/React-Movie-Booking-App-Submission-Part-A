@@ -1,5 +1,6 @@
 {
   "name": "movies-app",
+  "homepage": "https://roshanwaa.github.io/React-Movie-Booking-App-Submission-Part-A",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@material-ui/icons": "^3.0.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "gh-pages": "^4.0.0",
     "mongoose": "^6.6.5",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -19,6 +21,8 @@
     "youtube-node": "^1.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
